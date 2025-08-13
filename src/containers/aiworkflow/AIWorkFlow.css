@@ -1,0 +1,48 @@
+.ai-workflow-button {
+  background-image: linear-gradient(to right, #6dc9ff 0%, #088bff 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #00a84f;
+  display: block;
+  font: 14px Arial, sans-serif; /*18*/
+  height: 40px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 4px 20px;
+  color: #F0F0F0;
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+  z-index: 2;
+}
+.ai-input-box-container {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.ai-input-box-container:focus {
+  border: 1px solid black;
+}
+.ai-input-box-container textarea {
+  width: 100%;
+  height: auto;
+  outline: none;
+}
+.ai-message-container {
+  height: calc(100vh - 240px);
+  max-height: calc(100% - 100px);
+  overflow: auto;
+}
+.ai-message-item {
+  background-color: #f6f6f6;
+  height: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+}
+.ai-message-item-suggestion {
+  border: 1px solid #1976d2;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+}

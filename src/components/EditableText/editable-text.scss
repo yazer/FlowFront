@@ -1,0 +1,13 @@
+.editable-text-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    column-gap: 0.5rem;
+    font-weight: 600;
+
+    input {
+        &:focus {
+            background-color: rgb(219, 219, 219);
+        }
+    }
+}

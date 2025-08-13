@@ -1,0 +1,115 @@
+.react-flow__node-WorkFlowNode {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  // box-shadow: 0px 8px 24px rgba(66, 74, 83, 0.12);
+  width: 370px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  border: 1px solid rgb(211, 211, 211);
+
+  &.selected {
+    border: 2px solid #0060ab;
+  }
+  .editableTextContainer {
+    // height: 24px;
+    width: 250px;
+    outline: none;
+    padding: 0 5px 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    &:focus-visible {
+      border: 1px solid #0e1111;
+      border-radius: 2px;
+    }
+  }
+  .react-flow__handle-top {
+  }
+
+  .react-flow__handle-bottom {
+    bottom: -20px;
+  }
+
+  .react-flow__handle-right {
+    right: -20px;
+  }
+
+  .react-flow__handle-left {
+    left: -20px;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0px;
+    top: -54px;
+
+    .overlayMenu {
+      background-color: #001c39;
+      display: flex;
+      border-radius: 6px;
+      overflow: hidden;
+      font-size: 14px;
+
+      button {
+        padding: 12px 18px;
+        color: #ffffff;
+
+        &:hover {
+          background-color: #26486a;
+        }
+      }
+    }
+
+    .colorPicker {
+      margin-top: 8px;
+      background-color: #001c39;
+      display: flex;
+      padding: 8px;
+      justify-content: space-between;
+      gap: 4px;
+      border-radius: 6px;
+
+      .colorVariant {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+    }
+
+    .colorDropdownBtn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .activeColor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      .icon {
+        color: white;
+      }
+    }
+  }
+}
+
+.custom_handle {
+  top: -1.25px;
+  width: 101% !important;
+  border-radius: 0 !important;
+  border-radius: 6px !important;
+  height: 102% !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.custom_handle:hover {
+  box-shadow: none !important;
+  border: 2px solid #0060ab !important;
+  box-shadow: 0 0 10px 3px rgba(54, 179, 126, 0.5);
+}

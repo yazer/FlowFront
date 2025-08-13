@@ -1,0 +1,41 @@
+.chart_image_container{
+height: 30px;
+width: 35px;
+
+}
+.chart_image{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sheet_input{
+    border: 1px solid grey;
+    padding: 2px 8px 2px 8px;
+    outline: none;
+    width: 80px;
+    background-color: #f8f5f5;
+    font-size: 12px;
+}
+
+.chart_controls_popup{
+position: absolute;
+top: 0;
+right: 0;
+height: auto;
+width: 25px;
+border: 2px solid #0060AB;
+border-right: none;
+border-top: none;
+border-radius: 0 0 0 4px;
+background-color: #ffffff;
+}
+
+.chart_card {
+position: relative;
+
+} 
+
+.selected_chart {
+    border: 2px solid #0060AB !important;
+}

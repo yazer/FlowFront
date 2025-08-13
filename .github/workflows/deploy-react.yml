@@ -1,0 +1,42 @@
+name: Deploy React to S3
+
+on:
+  push:
+    branches:
+      - main   # Change to your deployment branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies 
+        working-directory: frontend/FLOWAI-FE
+        run: npm install --legacy-peer-deps
+
+      - name: Build React app
+        working-directory: frontend/FLOWAI-FE
+        run: npm run build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-1 # Change to your region
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync frontend/FLOWAI-FE/build s3://fairoosabucket/flowfront/build/ \
+            --delete \
+            --cache-control "max-age=31536000,public" \
+            --acl public-read

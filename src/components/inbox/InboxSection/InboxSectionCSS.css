@@ -1,0 +1,60 @@
+.inbox-sidebar {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.inbox-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #e6e6e6;
+  transition: background-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.inbox-item:hover {
+  background-color: #f0f0f0;
+}
+
+.inbox-item.active {
+  background-color: #0060AB;
+  color: #fff;
+}
+
+.inbox-item img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.inbox-item .inbox-info {
+  flex-grow: 1;
+}
+
+.inbox-item .inbox-info h5 {
+  margin: 0;
+  font-size: 14px;
+  color: inherit;
+  font-weight: 500;
+}
+
+.inbox-item .inbox-info p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.inbox-item.active .inbox-info p {
+  color: #fff;
+}
+
+.inbox-item .inbox-icon {
+  color: #999;
+}
+
+.inbox-item.active .inbox-icon {
+  color: #fff;
+}

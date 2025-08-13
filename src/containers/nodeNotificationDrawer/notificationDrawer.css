@@ -1,0 +1,18 @@
+.notification_drawer {
+  position: fixed;
+  top: 64px;
+  right: -400px;
+  width: 380px;
+  height: calc(100% - 64px); 
+  background-color: #f9f9fb;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 18px; 
+  border-radius: 15px 0 0 15px;
+  overflow-y: auto;
+}
+
+.notification_drawer.visible {
+  right: 0; 
+}

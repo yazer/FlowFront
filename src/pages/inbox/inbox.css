@@ -1,0 +1,70 @@
+.inbox-container {
+  width: 100%; /* Ensure the inbox container takes the full width */
+  display: flex;
+  flex-direction: column; /* Vertical listing of inbox items */
+  padding: 0; /* Remove unnecessary padding */
+  margin: 0; /* Remove unwanted margins */
+}
+
+.inbox-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0; /* Light border between messages */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inbox-item:hover {
+  background-color: #f7f7f7; /* Light hover effect */
+}
+
+.inbox-item.active {
+  background-color: #f0f9ff; /* Light blue background for active item */
+  border-left: 3px solid #42a5f5; /* Blue border to highlight the selected item */
+}
+
+.inbox-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inbox-item-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.inbox-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.inbox-item-label {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.inbox-item-time {
+  font-size: 12px;
+  color: #999; /* Lighter gray for time */
+}
+
+.inbox-item-date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.inbox-item.read {
+  background-color: #f0f0f0; /* Lighter color for read items */
+  color: #888888; /* Light text to indicate it's read */
+}
+
+.inbox-item.unread {
+  background-color: #ffffff; /* Default color for unread items */
+  color: #333333; /* Darker text for emphasis */
+  font-weight: bold; /* Optionally bold for unread */
+}

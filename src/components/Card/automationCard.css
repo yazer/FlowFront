@@ -1,0 +1,144 @@
+/* Global styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Card Styling */
+  .automation-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-left: 6px solid #007bff;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .automation-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .default-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    color: #007bff;
+  }
+  
+  /* Content Styling */
+  .card-content {
+    flex-grow: 1;
+  }
+  
+  .automation-title {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #007bff;
+    line-height: 1.2;
+  }
+  
+  .automation-description {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .automation-meta p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .automation-meta strong {
+    color: #333;
+  }
+  
+  .automation-card:hover {
+    border-left: 6px solid #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and small screens */
+  @media (max-width: 768px) {
+    .automation-card {
+      flex-direction: column;  /* Stack icon and content vertically */
+      max-width: 100%;         /* Make card take full width on smaller screens */
+      padding: 15px;           /* Reduce padding for smaller screens */
+    }
+  
+    .card-icon {
+      margin: 0 auto 15px;     /* Center the icon and add spacing below it */
+    }
+  
+    .automation-title {
+      font-size: 1.2em;        /* Slightly reduce title font size on smaller screens */
+    }
+  
+    .automation-description {
+      font-size: 0.9em;        /* Reduce description size */
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .automation-card {
+      padding: 10px;           /* Smaller padding for mobile */
+    }
+  
+    .automation-title {
+      font-size: 1.1em;        /* Further reduce title font size for mobile */
+    }
+  
+    .automation-description {
+      font-size: 0.85em;       /* Further reduce description size */
+    }
+  
+    .automation-meta p {
+      font-size: 0.8em;        /* Make metadata smaller */
+    }
+  
+    .card-icon img,
+    .default-icon {
+      width: 40px;             /* Reduce icon size for mobile */
+      height: 40px;
+    }
+  
+    /* Adjusting margin on mobile */
+    .card-icon {
+      margin: 0 auto 10px;     /* Add space below icon */
+    }
+  
+    .automation-meta p {
+      line-height: 1.4;        /* Increase line spacing for better readability */
+    }
+  }
+  

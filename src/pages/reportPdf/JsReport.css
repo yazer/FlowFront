@@ -1,0 +1,19 @@
+.no-headers .jss_worksheet tbody tr:first-child {
+  background-color: #f3f3f3;
+}
+
+.no-headers .jss_worksheet thead td:first-child,
+.no-headers .jss_worksheet tbody td:first-child {
+  visibility: hidden !important;
+}
+.no-headers .jss_worksheet {
+  margin-left: -50px;
+  pointer-events: none;
+}
+.no-headers .jss_worksheet thead {
+  display: none;
+}
+.jexcel {
+  height: auto !important;
+  overflow: visible;
+}

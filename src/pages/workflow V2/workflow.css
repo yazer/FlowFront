@@ -1,0 +1,95 @@
+.react-flow__handle {
+  width: 12px;
+  height: 12px;
+  background-color: #0060ab;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main:has(.form-builder) {
+  overflow: hidden !important;
+}
+
+.react-flow__handle:hover {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 10px 3px rgba(54, 179, 126, 0.5);
+}
+
+.custom-edge:hover .react-flow__edge-path {
+  stroke: #0060ab;
+}
+
+.custom-node-container {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  width: 350px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.custom-node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.custom-node-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.custom-node-delete-btn {
+  background: none;
+  border: none;
+  color: #e53935;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.3s ease;
+}
+
+.custom-node-delete-btn:hover {
+  color: #b71c1c;
+}
+
+.custom-node-body {
+  padding: 10px;
+}
+
+.custom-node-field {
+  margin-bottom: 15px;
+}
+
+.custom-node-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.custom-node-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.custom-node-field select:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+.react-flow__handle {
+  top: 20px;
+}

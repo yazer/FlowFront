@@ -1,0 +1,126 @@
+/* Base Styles */
+.email-detail-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px; /* Limit width to a reasonable size */
+}
+
+.email-detail-form {
+  width: 70%; /* Adjust width to fit form content */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Horizontal Form Layout */
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.email-label {
+  flex: 0 0 30%; /* Set the width for the label */
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #374151;
+  font-family: 'Roboto', sans-serif;
+  text-align: right; /* Align label text to the right */
+  padding-right: 10px; /* Add some spacing between label and input */
+}
+
+.email-input-field {
+  flex: 1; /* Allow input to take up remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.email-input-field:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5); /* Light blue shadow */
+  outline: none; /* Remove default outline */
+}
+
+/* Action Button Styling */
+.email-action-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
+  text-transform: none;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+/* Center the form card */
+.email-detail-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Action Buttons */
+.action-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.email-action-button.primary {
+  background-color: #1e40af;
+  color: white;
+}
+
+.email-action-button.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.email-action-button.default {
+  background-color: #e0e0e0;
+  color: #999;
+}
+
+.email-action-button.default:hover {
+  background-color: #d1d1d1;
+}
+
+/* Typography */
+.email-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em; /* Subtle letter spacing for elegance */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .email-detail-form {
+      width: 100%; /* Full width on smaller screens */
+  }
+
+  .form-group {
+      display: block;
+  }
+
+  .email-label {
+      text-align: left;
+      margin-bottom: 0.5rem;
+      padding-right: 0;
+  }
+
+  .email-input-field {
+      width: 100%; /* Full width for input fields on small screens */
+  }
+}

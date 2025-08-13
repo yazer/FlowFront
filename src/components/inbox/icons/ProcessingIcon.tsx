@@ -1,0 +1,38 @@
+import { IconProps } from "./IconProps";
+
+export function ProcessingIcon({
+  width = 20,
+  height = 20,
+  color = "#000000",
+}: IconProps) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 20 20"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        id="Page-1"
+        stroke="none"
+        strokeWidth="1"
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          id="Dribbble-Light-Preview"
+          transform="translate(-220.000000, -999.000000)"
+          fill={color}
+        >
+          <g id="icons" transform="translate(56.000000, 160.000000)">
+            <path
+              d="M181,849 L181,846 L182,849 L181,849 Z M182,851 L182,857 L166,857 L166,851 L170,851 L170,855 L178,855 L178,851 L182,851 Z M167,846 L167,849 L166,849 L167,846 Z M179,849 L176,849 L176,853 L172,853 L172,849 L169,849 L169,841 L179,841 L179,849 Z M164,859 L184,859 L184,849 L182,843 L181,843 L181,839 L167,839 L167,843 L166,843 L164,849 L164,859 Z"
+              id="inbox_paper-[#1555]"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}
