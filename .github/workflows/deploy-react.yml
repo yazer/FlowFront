@@ -37,7 +37,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync react_build s3://fairoosabucket/flowfront/build/ \
+          aws s3 sync app/build/ s3://fairoosabucket/flowfront/build/ \
             --delete \
             --cache-control "max-age=31536000,public" \
             --acl public-read
