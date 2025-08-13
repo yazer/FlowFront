@@ -20,11 +20,11 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies 
-        working-directory: app
+        working-directory: app/
         run: npm install --legacy-peer-deps
 
       - name: Build React app
-        working-directory: app
+        working-directory: app/
         run: npm run build
 
       - name: Configure AWS credentials
