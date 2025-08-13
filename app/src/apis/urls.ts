@@ -1,9 +1,9 @@
 const token = localStorage.getItem("token");
 // export const BASE_URL = "https://godfather123.pythonanywhere.com";
-export const BASE_URL = "https://sandbox.processflowai.com";
-// export const BASE_URL = window.location.origin.includes("localhost")
-//   ? "https://godfather123.pythonanywhere.com"
-//   : window.location.origin;
+// export const BASE_URL = "https://sandbox.processflowai.com";
+export const BASE_URL = window.location.hostname.includes("localhost")
+  ? `https://${window.location.hostname}`
+  : window.location.origin;
 // export const BASE_URL = window.location.origin;
 // export const BASE_URL = "https://processflowai.com";
 // export const BASE_URL = "http://127.0.0.1:8000/";

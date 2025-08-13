@@ -1,6 +1,6 @@
 // @ts-ignore
 import { useIntl } from "react-intl";
-import DynamicFormPopup from "../../components/Modal/DynamicForm";
+import DynamicFormPopup from "../Modal/DynamicForm";
 import DirectionBasedOnLanguage from "../DirectionBasedOnLanguage";
 
 interface FormPreviewProps {
